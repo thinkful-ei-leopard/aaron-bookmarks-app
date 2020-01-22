@@ -44,7 +44,7 @@ const api = (function () {
     });
   };
 
-  const deleteBookmark = function(id) {
+  const removeBookmark = function(id) {
     return apiData(`${BASE_URL}/bookmarks/${id}`, {
       method: 'DELETE'
     });
@@ -53,7 +53,7 @@ const api = (function () {
   return {
     getBookmarks,
     createBookmark,
-    deleteBookmark
+    removeBookmark
   };
 
 }());

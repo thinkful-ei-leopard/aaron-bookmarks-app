@@ -14,31 +14,37 @@ const bookmarks = (function() {
   function generateAddBookmarkForm() {
     return `
       <form id="add-bookmark">
+
         <h2>Enter A New Bookmark</h2>
         <div class="labels-inputs">
             <label for="bookmark-title" class="bookmark-title">Bookmark Title</label>
             </br>
             <input type="text" id="bookmark-title" name="title" placeholder="Enter title" class="form-input" required>
         </div>
+
         <div class="labels-inputs">
             <label for="bookmark-url">URL</label>
             </br>
-            <input type="url" id="bookmark-url" name="url" placeholder="Enter website URL" class="form-input" required>
+            <input type="url" id="bookmark-url" name="url" placeholder="Enter website URL (include https://)" class="form-input" required>
         </div>
+
         <div class="labels-inputs">
             <label for="bookmark-description">Description</label>
             </br>
             <textarea rows="4" cols="40" id="bookmark-description" name="description" placeholder="Enter bookmark description" class="form-input-desc" required></textarea>
         </div>
+
         <div class="labels-inputs">
-            <label for="bookmark-rating">Please rate this bookmark between 1-5:</label>
+            <label for="bookmark-rating">Please rate this bookmark between 1-5 stars:</label>
             </br>
             <input type="number" id="bookmark-rating" name="rating" value=3 min=1 max=5 class="form-input-rating" required>
         </div>
+
         <div class="form-buttons">
             <button type="submit" name="create-bookmark" class="create-bookmark-button form-button">Add Bookmark</button>
             <button type="button" name="cancel-bookmark" class="cancel-bookmark-button form-button">Cancel</button>
         </div>
+        
       </form>`;
   }
   
@@ -79,7 +85,7 @@ const bookmarks = (function() {
       <li data-item-id="${bookmark.id}" class="bookmark-item expanded">
         <h2 class="bookmark-name">${bookmark.title}</h2>
         <p class="description">${bookmark.desc}</p>
-        <h3 class="rating">Rating: ${bookmark.rating}</h3>
+        <h3 class="rating">Rating: ${bookmark.rating} Stars </h3>
         <div class="visit-site">
           <a href="${bookmark.url}">Visit Site</a>
         </div>
@@ -92,7 +98,7 @@ const bookmarks = (function() {
       return `
       <li data-item-id="${bookmark.id}" class="bookmark-item">
         <h2 class="bookmark-name">${bookmark.title}</h2>
-        <h3 class="rating">Rating: ${bookmark.rating}</h3>
+        <h3 class="rating">Rating: ${bookmark.rating} Stars</h3>
         <div class="bookmark-controls">
           <button class="expand-button" type="button">Detailed View</button>
           <button class="delete-button" type="button">Delete</button>
@@ -135,10 +141,10 @@ const bookmarks = (function() {
   }
 
 
-  function handleDeleteBookmark(id) {
+  function handleRemoveBookmark(id) {
     $('.my-bookmarks').on('click', '.delete-button', function(event) {
       const id = getBookmarkIdFromElement(event.currentTarget);
-      api.deleteBookmark(id)
+      api.removeBookmark(id)
         .then(() => {
           store.findAndDelete(id);
           render();
@@ -181,7 +187,7 @@ const bookmarks = (function() {
     handleAddBookmark();
     handleAddBookmarkForm();
     handleCancelAddBookmark();
-    handleDeleteBookmark();
+    handleRemoveBookmark();
     handleExpandButton();
     handleCondenseButton();
     handleFilterButton();

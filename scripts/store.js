@@ -7,12 +7,12 @@ const store = (function() {
     this.bookmarks.push(bookmark);
   };
 
-  const findById = function(id) {
-    this.bookmarks.find(bookmark => bookmark.id === id);
-  };
-
   const findAndDelete = function(id) {
     this.bookmarks = this.bookmarks.filter(bookmark => bookmark.id !== id);
+  };
+
+  const findById = function(id) {
+    this.bookmarks.find(bookmark => bookmark.id === id);
   };
 
   const error = {
@@ -28,11 +28,11 @@ const store = (function() {
     bookmarks: [],
     isAddingBookmark: false,
     error,
-    minRating: 0,
     addItem,
     findById,
     findAndDelete,
-    addErrorToStore
+    addErrorToStore,
+    minRating: 0
   };
   
 }());

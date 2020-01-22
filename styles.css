@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 * {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Josefin Sans', sans-serif;
     color: #24057a;
 }
 
@@ -44,7 +46,7 @@ h1 {
     border: 1px black solid;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     width: 60%;
 }
 
@@ -56,8 +58,7 @@ h1 {
     border: 1px #24057a;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
     width: 60%;
 }
 
@@ -90,11 +91,11 @@ h1 {
 }
 
 .bookmark-name {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .rating {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .bookmark-controls {
@@ -112,8 +113,9 @@ h1 {
     font-weight: bold;
     padding: 5px;
     width: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
 }
 
 .expand-button:hover {
@@ -136,7 +138,9 @@ h1 {
     margin: 0;
     margin-top: 8px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 20px;
+    color: black;
+    align-items: center;
 }
 
 .visit-site {
@@ -169,6 +173,7 @@ a:hover {
     width: 80px;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 15px;
 }
 
 .condense-button:hover {
@@ -205,12 +210,14 @@ a:hover {
     width: 90%;
     margin-top: 3px;
     height: 30px;
-    border: 1px grey solid;
+    border: 1px black;
     padding-left: 3px;
+    font-size: 15px;
 }
 
 #bookmark-title, #bookmark-url, #bookmark-description, #bookmark-rating {
     margin-top: 5px;
+    font-size: 15px;
 }
 
 .form-buttons {
