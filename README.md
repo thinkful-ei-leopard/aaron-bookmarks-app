@@ -21,7 +21,8 @@ I can add bookmarks to my bookmark list. Bookmarks contain:
 I can click on a bookmark to display the "detailed" view
 
 -Detailed view expands to additionally display description and a "Visit Site" link
-I can remove bookmarks from my bookmark list
+
+-I can remove bookmarks from my bookmark list
 
 -I receive appropriate feedback when I cannot submit a bookmark
 
