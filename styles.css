@@ -62,7 +62,7 @@ background-color: #24057a;
 }
 
 .add-button:hover {
-    background-color: darkgreen;
+    background-color: black;
     color: white;
 }
 
@@ -75,7 +75,7 @@ background-color: #24057a;
 }
 
 .bookmark-item {
-    background-color: lightblue;
+    background-color: lightgray;
     margin-bottom: 20px;
     list-style: none;
     width: 90%;
@@ -103,11 +103,11 @@ background-color: #24057a;
 }
 
 .expand-button, .delete-button {
-    background-color: rgb(71, 196, 71);
+    background-color:#24057a;
     border: none;
     color: white;
     text-align: center;
-    border: 1px darkgreen solid;
+    border: 2px black;
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
@@ -117,18 +117,18 @@ background-color: #24057a;
 }
 
 .expand-button:hover {
-    background-color: darkgreen;
+    background-color: black;
     color: white;
 }
 
 .delete-button {
-    background-color: rgb(155, 155, 155);
+    background-color:#24057a;
     border: 1px rgb(94, 94, 94) solid;
     font-weight: normal;
 }
 
 .delete-button:hover {
-    background-color: rgb(107, 107, 107);
+    background-color: black;
     color: white;
 }
 
@@ -144,7 +144,7 @@ background-color: #24057a;
     margin-bottom: 20px;
     border: 1px solid black;
     padding: 15px;
-    background-color: rgb(75, 190, 75)
+    background-color: black;
 }
 
 a {
@@ -154,15 +154,15 @@ a {
 }
 
 a:hover {
-    color: purple;
+    color:black;
 }
 
-.collapse-button {
-    background-color: rgb(250, 95, 95);
+.condense-button {
+    background-color: #24057a;
     border: none;
     color: white;
     text-align: center;
-    border: 1px darkgreen solid;
+    border: 1px black;
     text-decoration: none;
     font-weight: bold;
     padding: 5px;
@@ -171,8 +171,8 @@ a:hover {
     margin-right: 10px;
 }
 
-.collapse-button:hover {
-    background-color: red;
+.condense-button:hover {
+    background-color:black;
     color: white;
 }
 
@@ -186,7 +186,7 @@ a:hover {
     padding-top: 1px;
     margin-top: 10px;
     border-radius: 5px;
-    background: lightblue
+    background: lightgray;
 }
 
 #add-bookmark > h2 {
@@ -223,11 +223,11 @@ a:hover {
 }
 
 .form-button {
-    background-color: rgb(71, 196, 71);
+    background-color: #24057a;
     border: none;
     color: white;
     padding: 15px 32px;
-    border: 1px darkgreen solid;
+    border: 1px #24057a;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
@@ -235,18 +235,18 @@ a:hover {
 }
 
 .cancel-bookmark-button {
-    background-color: rgb(155, 155, 155);
+    background-color: #24057a;
     border: 1px rgb(94, 94, 94) solid;
     font-weight: normal;
 }
 
 .form-button:hover {
-    background-color: darkgreen;
+    background-color: black;
     color: white;
   }
 
 .cancel-bookmark-button:hover {
-    background-color: rgb(107, 107, 107);
+    background-color: black;
     color: white;
 }
 
@@ -281,7 +281,7 @@ a:hover {
         width: 700px;
     }
 
-    .expand-button, .delete-button, .collapse-button {
+    .expand-button, .delete-button, .condense-button {
         width: 100px;
     }
 
@@ -321,7 +321,7 @@ a:hover {
         width: 900px;
     }
 
-    .expand-button, .delete-button, .collapse-button {
+    .expand-button, .delete-button, .condense-button {
         width: 120px;
     }
 
