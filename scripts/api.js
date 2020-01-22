@@ -4,7 +4,7 @@ const api = (function () {
 
   const BASE_URL = 'https://thinkful-list-api.herokuapp.com/aaron';
 
-  const apiDry = function (...args) {
+  const apiData = function (...args) {
     let error;
     return fetch(...args)
       .then(res => {
@@ -24,7 +24,7 @@ const api = (function () {
 
 
   const getBookmarks = function() {
-    return apiDry(`${BASE_URL}/bookmarks`);
+    return apiData(`${BASE_URL}/bookmarks`);
   };
 
   const createBookmark = function(title, url, desc, rating) {
@@ -35,7 +35,7 @@ const api = (function () {
         desc: desc,
         rating: rating
       });
-    return apiDry(`${BASE_URL}/bookmarks`, {
+    return apiData(`${BASE_URL}/bookmarks`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ const api = (function () {
   };
 
   const deleteBookmark = function(id) {
-    return apiDry(`${BASE_URL}/bookmarks/${id}`, {
+    return apiData(`${BASE_URL}/bookmarks/${id}`, {
       method: 'DELETE'
     });
   };
