@@ -49,11 +49,11 @@ h1 {
 }
 
 .add-button {
-background-color: #24057a;
+    background-color: #24057a;
     border: none;
     color: white;
     padding: 10px;
-    border: 1px darkgreen solid;
+    border: 1px #24057a;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
