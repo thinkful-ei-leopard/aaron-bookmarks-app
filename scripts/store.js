@@ -34,4 +34,5 @@ const store = (function() {
     findAndDelete,
     addErrorToStore
   };
+  
 }());
