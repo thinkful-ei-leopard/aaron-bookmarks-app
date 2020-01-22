@@ -7,12 +7,12 @@ https://thinkful-ei-leopard.github.io/aaron-bookmarks-app/
 As a user:
 
 I can add bookmarks to my bookmark list. Bookmarks contain:
-<ul>
+<li>
 title
 url link
 description
 rating (1-5)
-</ul>
+</li>
 
 I can see a list of my bookmarks when I first open the app
 
