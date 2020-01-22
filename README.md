@@ -7,11 +7,13 @@ https://thinkful-ei-leopard.github.io/aaron-bookmarks-app/
 As a user:
 
 I can add bookmarks to my bookmark list. Bookmarks contain:
-
+<ul>
 title
 url link
 description
 rating (1-5)
+</ul>
+
 I can see a list of my bookmarks when I first open the app
 
 All bookmarks in the list default to a "condensed" view showing only title and rating
